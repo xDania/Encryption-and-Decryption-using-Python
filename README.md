@@ -9,7 +9,45 @@ pip install pybase64
 pip install mysql-connector-python
 pip install mysql-connector
 ```
+# Database
+Here is a database that store the encryption and decryption messages
+## storing ecryption in the database 
+```
+      def stor_data():
 
+            connection = mysql.connector.connect(host='127.0.0.1',
+                                                 database='pypro',
+                                                 user='root',
+                                                 password='12345678')
+            mycursor = connection.cursor()
+
+            sql = "INSERT INTO info (text1,text2) VALUES (%s,%s)"
+
+            info = (str(message2), str(encry))
+
+            mycursor.execute(sql, info)
+
+            connection.commit()
+
+```
+## storing decryption in the database 
+        def stor_data2():
+
+            connection = mysql.connector.connect(host='127.0.0.1',
+                                                 database='pypro',
+                                                 user='root',
+                                                 password='12345678')
+            mycursor = connection.cursor()
+
+            sql = "INSERT INTO info (text1,text2) VALUES (%s,%s)"
+
+            info = (str(message1), str(decry))
+
+            mycursor.execute(sql, info)
+
+            connection.commit()
+           
+            
 ## Output 
 
 
