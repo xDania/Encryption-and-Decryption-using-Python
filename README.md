@@ -3,6 +3,13 @@ A project for IT315 course, presented to Dr. Afaf Alsalmi , the software develop
 ## Project idea
 Encryption and Decryption using Python where the user can encrypt and decrypt the text they want. First by clicking on Create Secret Messages a window will pop up with two text boxes where the user type the text they want to encrypt then type the key and click on encrypt and it will show the encrypted message, for the decryption it is the same but the user should decrypt a message that is encrypted earlier and choose the decrypt option. 
 
+## Install 
+```
+pip install pybase64
+pip install mysql-connector-python
+pip install mysql-connector
+```
+
 ## Output 
 
 
